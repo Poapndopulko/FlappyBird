@@ -1,14 +1,14 @@
 {
-    "name": "InpuScheme",
+    "name": "InputScheme",
     "maps": [
         {
-            "name": "ActionMap",
-            "id": "3a5a6a97-20d2-46e0-98f5-0b4f5762f399",
+            "name": "BirdMover",
+            "id": "38501164-c90a-4805-a15b-509f68f48332",
             "actions": [
                 {
-                    "name": "Touch",
+                    "name": "Jump",
                     "type": "Button",
-                    "id": "0d171cef-5c0e-488c-8e6a-a83b7f3d9acd",
+                    "id": "267a4fb4-5bb2-4780-a098-7c3ef2a75b8d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -17,23 +17,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "1245e269-b399-4b11-be08-3955b8c0867a",
-                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "id": "822ba51e-d93e-41dc-ba8d-9c3695f9923e",
+                    "path": "<Touchscreen>/touch0/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "Mobile",
-                    "action": "Touch",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "37aadcbc-b569-4c16-9776-9f01f24746a7",
+                    "id": "35b8aa4b-d474-4603-ad09-3591fd503268",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
-                    "action": "Touch",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -42,13 +42,13 @@
     ],
     "controlSchemes": [
         {
-            "name": "Mobile",
-            "bindingGroup": "Mobile",
+            "name": "PC",
+            "bindingGroup": "PC",
             "devices": []
         },
         {
-            "name": "PC",
-            "bindingGroup": "PC",
+            "name": "Mobile",
+            "bindingGroup": "Mobile",
             "devices": []
         }
     ]
