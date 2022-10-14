@@ -50,6 +50,11 @@
             "name": "Mobile",
             "bindingGroup": "Mobile",
             "devices": []
+        },
+        {
+            "name": "GameController",
+            "bindingGroup": "GameController",
+            "devices": []
         }
     ]
 }

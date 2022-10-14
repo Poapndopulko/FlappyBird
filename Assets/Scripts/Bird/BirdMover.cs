@@ -10,11 +10,6 @@ public class BirdMover : MonoBehaviour
     [SerializeField] private float _maxAngle = 45f;
     [SerializeField] private float _speedRotation = 2f;
 
-    private void Start()
-    {
-        _rigidbody2D.velocity = new Vector2(_speed, 0);
-    }
-
     public void Jump()
     {
         Vector2 currentSpeed = _rigidbody2D.velocity;
@@ -22,6 +17,11 @@ public class BirdMover : MonoBehaviour
         _rigidbody2D.velocity = new Vector2(currentSpeed.x, 0);
         _rigidbody2D.AddForce(new Vector2(0, startSpeed * _rigidbody2D.mass), ForceMode2D.Impulse);
         Rotate();
+    }
+
+    private void Awake()
+    {
+        _rigidbody2D.velocity = new Vector2(_speed, 0);
     }
 
     private void Update()

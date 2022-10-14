@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/InputScheme.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/Bird/InputScheme.inputactions'
 
 using System;
 using System.Collections;
@@ -62,6 +62,11 @@ public class @InputScheme : IInputActionCollection, IDisposable
         {
             ""name"": ""Mobile"",
             ""bindingGroup"": ""Mobile"",
+            ""devices"": []
+        },
+        {
+            ""name"": ""GameController"",
+            ""bindingGroup"": ""GameController"",
             ""devices"": []
         }
     ]
@@ -163,6 +168,15 @@ public class @InputScheme : IInputActionCollection, IDisposable
         {
             if (m_MobileSchemeIndex == -1) m_MobileSchemeIndex = asset.FindControlSchemeIndex("Mobile");
             return asset.controlSchemes[m_MobileSchemeIndex];
+        }
+    }
+    private int m_GameControllerSchemeIndex = -1;
+    public InputControlScheme GameControllerScheme
+    {
+        get
+        {
+            if (m_GameControllerSchemeIndex == -1) m_GameControllerSchemeIndex = asset.FindControlSchemeIndex("GameController");
+            return asset.controlSchemes[m_GameControllerSchemeIndex];
         }
     }
     public interface IBirdMoverActions
